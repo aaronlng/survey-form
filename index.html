@@ -13,8 +13,18 @@
     <p id="description">This is a simple email list subscription form where the user will sign up with their information
         to be added to an email list.</p>
     <form id="survey-form">
-        <label for="name">Full Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter Full Name" required> 
+        <label for="name" id="name-label">Full Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter Full Name" required>
+        <br>
+        <label for="email" id="email-label">Email Address:</label>
+        <input type="email" name="email" id="email" placeholder="johnsmith@email.com" required>
+        <br>
+        <label for="birthday" id="birthday-label">Date of Birth:</label>
+        <input type="date" name="birthday" id="birthday" required>
+        <br>
+        <label for="randomNumber" id="number-label">Number between 1 and 10</label>
+        <input type="number" id="number" name="number" min=1 max=10 placeholder="Enter a number between 1-10" size=50
+            required>
     </form>
 </body>
 
