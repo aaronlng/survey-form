@@ -1,5 +1,15 @@
 # Survey Form - Create a survey form using HTML, CSS, and JavaScript
 
+## Author
+
+### Aaron Long
+
+- [GitHub Profile](https://github.com/aaronlng/)
+
+- Twitter: [@aaronlng](https://twitter.com/aaronlng)
+
+## Guidlines
+
 - User Story #1: I can see a title with `id="title"` in H1 sized text.
 
 - User Story #2: I can see a short explanation with `id="description"` in P sized text.
