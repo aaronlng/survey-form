@@ -8,17 +8,19 @@
 /* main content */
 
 body {
-    background: #ab0909;
+    background: #ffffff;
 }
 
 main {
-    background: #ffffff;
+    background: #ab0909;
+    color: #ffffff;
     height: 100vh;
 }
 
 h1 {
     text-align: center;
     padding: 20px;
+    opacity: 100%;
 }
 
 p {
