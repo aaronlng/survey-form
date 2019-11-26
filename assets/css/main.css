@@ -1,0 +1,38 @@
+* {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, auto);
+    row-gap: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        row-gap: 10px;
+    }
+
+    .submit {
+        grid-column: 2/3;
+        align-self: end;
+        justify-self: end;
+    }
+}

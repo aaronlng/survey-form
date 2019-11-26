@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <title>Survey Form</title>
 </head>
 
@@ -12,44 +13,56 @@
     <h1 id="title">Email List Subscription</h1>
     <p id="description">This is a simple email list subscription form where the user will sign up with their information
         to be added to an email list.</p>
-    <form id="survey-form">
-        <label for="name" id="name-label">Full Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter Full Name" required>
-        <br>
-        <label for="email" id="email-label">Email Address:</label>
-        <input type="email" name="email" id="email" placeholder="johnsmith@email.com" required>
-        <br>
-        <label for="birthday" id="birthday-label">Date of Birth:</label>
-        <input type="date" name="birthday" id="birthday" required>
-        <br>
-        <label for="gender">Gender:</label>
-        <input type="radio" name="gender" value="male">Male
-        <input type="radio" name="gender" value="female">Female
-        <input type="radio" name="gender" value="other">Other
-        <br>
-        <label for="randomNumber" id="number-label">Number between 1 and 10</label>
-        <input type="number" id="number" name="number" min=1 max=10 placeholder="Enter a number between 1-10" size=50
-            required>
-        <br>
-        <label for="dropdown">Favorite Pizza Topping:</label>
-        <input list="toppings" placeholder="Choose a topping">
-        <datalist id="toppings">
-            <option value="Pepperoni">
-            <option value="Sausage">
-            <option value="Mushrooms">
-            <option value="Olives">
-            <option value="Pineapple">
-        </datalist>
-        <br>
-        <label for="satisfaction">How satisfied are you with this form?</label>
-        <input type="checkbox" name="satisfaction" value="dissatisfied">Dissatisfied
-        <input type="checkbox" name="satisfaction" value="neutral">Neutral
-        <input type="checkbox" name="satisfaction" value="satisfied">Satisfied
-        <br>
-        <label for="comments">Additional Comments:</label>
-        <textarea name="comments">Any additional comments about this survey may go here.</textarea>
-        <br>
-        <input type="submit" name="submit" value="submit">
+    <form id="survey-form" class="container">
+        <fieldset>
+            <label for="name" id="name-label">Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Full Name" required>
+        </fieldset>
+        <fieldset>
+            <label for="email" id="email-label">Email Address:</label>
+            <input type="email" name="email" id="email" placeholder="johnsmith@email.com" required>
+        </fieldset>
+        <fieldset>
+            <label for="birthday" id="birthday-label">Date of Birth:</label>
+            <input type="date" name="birthday" id="birthday" required>
+        </fieldset>
+        <fieldset>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male">
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" value="female">
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" value="other">
+            <label for="gender">Other</label>
+        </fieldset>
+        <fieldset>
+            <label for="randomNumber" id="number-label">Number between 1 and 10</label>
+            <input type="number" id="number" name="number" min=1 max=10 placeholder="Enter a number between 1-10"
+                size=50 required>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Favorite Pizza Topping:</label>
+            <input list="toppings" placeholder="Choose a topping">
+            <datalist id="toppings">
+                <option value="Pepperoni">
+                <option value="Sausage">
+                <option value="Mushrooms">
+                <option value="Olives">
+                <option value="Pineapple">
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <label for="satisfaction">How satisfied are you with this form?</label>
+            <br>
+            <input type="checkbox" name="satisfaction" value="dissatisfied">Dissatisfied
+            <input type="checkbox" name="satisfaction" value="neutral">Neutral
+            <input type="checkbox" name="satisfaction" value="satisfied">Satisfied
+        </fieldset>
+        <fieldset>
+            <label for="comments">Additional Comments:</label>
+            <textarea name="comments">Any additional comments about this survey may go here.</textarea>
+        </fieldset>
+        <input class="submit" type="submit" name="submit" value="submit">
     </form>
 </body>
 
