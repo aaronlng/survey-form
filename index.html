@@ -39,19 +39,19 @@
             </fieldset>
             <fieldset>
                 <label for="randomNumber" id="number-label">Number between 1 and 10</label>
-                <input type="number" id="number" name="number" min=1 max=10 placeholder="1-10"
-                    size=50 required>
+                <input type="number" id="number" name="number" min=1 max=10 placeholder="1-10" size=50 required>
             </fieldset>
             <fieldset>
                 <label for="dropdown">Favorite Pizza Topping:</label>
-                <input list="toppings" placeholder="Choose a topping">
-                <datalist id="toppings">
-                    <option value="Pepperoni">
-                    <option value="Sausage">
-                    <option value="Mushrooms">
-                    <option value="Olives">
-                    <option value="Pineapple">
-                </datalist>
+                <select id="dropdown" list="toppings" placeholder="Choose a topping">
+
+                    <option value="Pepperoni">Pepperoni</option>
+                    <option value="Sausage">Sausage</option>
+                    <option value="Mushrooms">Mushrooms</option>
+                    <option value="Olives">Olives</option>
+                    <option value="Pineapple">Pineapple</option>
+
+                </select>
             </fieldset>
             <fieldset>
                 <label for="satisfaction">How satisfied are you with this form?</label>
@@ -64,7 +64,7 @@
                 <label for="comments">Additional Comments:</label>
                 <textarea name="comments">Any additional comments about this survey may go here.</textarea>
             </fieldset>
-            <input class="submit" type="submit" name="submit" value="submit">
+            <input id="submit" type="submit" name="submit" value="submit">
         </form>
     </main>
 </body>

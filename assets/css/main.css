@@ -51,7 +51,7 @@ fieldset {
         row-gap: 10px;
     }
 
-    .submit {
+    #submit {
         grid-column: 2/3;
         align-self: end;
         justify-self: end;
