@@ -1,5 +1,9 @@
 # Survey Form - Create a survey form using HTML, CSS, and JavaScript
 
+## Demo
+
+![Demo of Survey Page](assets/demo.gif)
+
 ## Author
 
 ### Aaron Long
