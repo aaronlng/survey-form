@@ -14,7 +14,7 @@ body {
 main {
     background: #ab0909;
     color: #ffffff;
-    height: 100vh;
+    height: 100%;
 }
 
 h1 {
@@ -28,8 +28,19 @@ p {
     margin-bottom: 20px;
 }
 
+form {
+    height: 100vh;
+    margin-top: 50px;
+}
 fieldset {
     border: none;
+}
+
+/* submit button */
+
+#submit {
+    padding: 0px 60px;
+    margin-bottom: 40px;
 }
 
 /* grid */
@@ -55,5 +66,6 @@ fieldset {
         grid-column: 2/3;
         align-self: end;
         justify-self: end;
+        padding: 20px 40px;
     }
 }
