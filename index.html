@@ -37,11 +37,11 @@
                 <input type="radio" name="gender" value="other">
                 <label for="gender">Other</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="number">
                 <label for="randomNumber" id="number-label">Number between 1 and 10</label>
                 <input type="number" id="number" name="number" min=1 max=10 placeholder="1-10" size=50 required>
             </fieldset>
-            <fieldset>
+            <fieldset class="dropdownMenu">
                 <label for="dropdown">Favorite Pizza Topping:</label>
                 <select id="dropdown" list="toppings" placeholder="Choose a topping">
 
@@ -53,14 +53,14 @@
 
                 </select>
             </fieldset>
-            <fieldset>
+            <fieldset class="checkbox">
                 <label for="satisfaction">How satisfied are you with this form?</label>
                 <br>
                 <input type="checkbox" name="satisfaction" value="dissatisfied">Dissatisfied
                 <input type="checkbox" name="satisfaction" value="neutral">Neutral
                 <input type="checkbox" name="satisfaction" value="satisfied">Satisfied
             </fieldset>
-            <fieldset>
+            <fieldset class="textArea">
                 <label for="comments">Additional Comments:</label>
                 <textarea name="comments" id="comments">Any additional comments about this survey may go here.</textarea>
             </fieldset>
