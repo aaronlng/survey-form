@@ -17,32 +17,32 @@
                 to be added to an email list.</em></p>
         <form id="survey-form" class="container">
             <fieldset class="name">
-                <label for="name" id="name-label">Full Name:</label>
+                <label for="name" id="name-label" class="titles">Full Name:</label>
                 <input type="text" name="name" id="name" size="30" placeholder="Enter Full Name" required>
             </fieldset>
             <fieldset class="email">
-                <label for="email" id="email-label">Email Address:</label>
+                <label for="email" id="email-label" class="titles">Email Address:</label>
                 <input type="email" name="email" id="email" size="30" placeholder="johnsmith@email.com" required>
             </fieldset>
             <fieldset class="birthday">
-                <label for="birthday" id="birthday-label">Date of Birth:</label>
+                <label for="birthday" id="birthday-label" class="titles">Date of Birth:</label>
                 <input type="date" name="birthday" id="birthday" required>
             </fieldset>
             <fieldset class="gender">
-                <label for="gender">Gender:</label>
-                <input type="radio" name="gender" value="male">
+                <label for="gender" class="titles">Gender:</label>
+                <input type="radio" name="gender" value="male" class="radio-option">
                 <label for="gender">Male</label>
-                <input type="radio" name="gender" value="female">
+                <input type="radio" name="gender" value="female" class="radio-option">
                 <label for="gender">Female</label>
-                <input type="radio" name="gender" value="other">
+                <input type="radio" name="gender" value="other" class="radio-option">
                 <label for="gender">Other</label>
             </fieldset>
             <fieldset class="number">
-                <label for="randomNumber" id="number-label">Number between 1 and 10</label>
+                <label for="randomNumber" id="number-label" class="titles">Number between 1 and 10:</label>
                 <input type="number" id="number" name="number" min=1 max=10 placeholder="1-10" size=50 required>
             </fieldset>
             <fieldset class="dropdownMenu">
-                <label for="dropdown">Favorite Pizza Topping:</label>
+                <label for="dropdown" class="titles">Favorite Pizza Topping:</label>
                 <select id="dropdown" list="toppings" placeholder="Choose a topping">
 
                     <option value="Pepperoni">Pepperoni</option>
@@ -54,14 +54,13 @@
                 </select>
             </fieldset>
             <fieldset class="checkbox">
-                <label for="satisfaction">How satisfied are you with this form?</label>
-                <br>
-                <input type="checkbox" name="satisfaction" value="dissatisfied">Dissatisfied
-                <input type="checkbox" name="satisfaction" value="neutral">Neutral
-                <input type="checkbox" name="satisfaction" value="satisfied">Satisfied
+                <label for="satisfaction" class="titles">How satisfied are you with this form?</label>
+                <input type="checkbox" name="satisfaction" value="dissatisfied" class="checkbox-option">Dissatisfied
+                <input type="checkbox" name="satisfaction" value="neutral" class="checkbox-option">Neutral
+                <input type="checkbox" name="satisfaction" value="satisfied" class="checkbox-option">Satisfied
             </fieldset>
             <fieldset class="textArea">
-                <label for="comments">Additional Comments:</label>
+                <label for="comments" class="titles">Additional Comments:</label>
                 <textarea name="comments" id="comments">Any additional comments about this survey may go here.</textarea>
             </fieldset>
             <input id="submit" type="submit" name="submit" value="submit" id="submit">

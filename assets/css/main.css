@@ -40,6 +40,20 @@ form {
     height: 100vh;
     margin-top: 50px;
 }
+
+.titles {
+    font-weight: bold;
+}
+
+.radio-option {
+    margin-left: 10px;
+}
+
+.checkbox-option {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
 fieldset {
     border: none;
 }
