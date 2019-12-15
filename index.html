@@ -16,53 +16,43 @@
                 information
                 to be added to an email list.</em></p>
         <form id="survey-form" class="container">
-            <fieldset class="name">
-                <label for="name" id="name-label" class="titles">Full Name:</label>
-                <input type="text" name="name" id="name" class="text-input" size="20" placeholder="Enter Full Name" required>
-            </fieldset>
-            <fieldset class="email">
-                <label for="email" id="email-label" class="titles">Email Address:</label>
-                <input type="email" name="email" id="email" class="text-input" size="20" placeholder="johnsmith@email.com" required>
-            </fieldset>
-            <fieldset class="birthday">
-                <label for="birthday" id="birthday-label" class="titles">Date of Birth:</label>
-                <input type="date" name="birthday" id="birthday" class="text-input" required>
-            </fieldset>
-            <fieldset class="gender">
-                <label for="gender" class="titles">Gender:</label>
-                <input type="radio" name="gender" value="male" class="radio-option">
-                <label for="gender">Male</label>
-                <input type="radio" name="gender" value="female" class="radio-option">
-                <label for="gender">Female</label>
-                <input type="radio" name="gender" value="other" class="radio-option">
-                <label for="gender">Other</label>
-            </fieldset>
-            <fieldset class="number">
-                <label for="randomNumber" id="number-label" class="titles">Number between 1 and 10:</label>
-                <input type="number" id="number" class="text-input" name="number" min=1 max=10 placeholder="1-10" size=50 required>
-            </fieldset>
-            <fieldset class="dropdownMenu">
-                <label for="dropdown" class="titles">Favorite Pizza Topping:</label>
-                <select id="dropdown" list="toppings" placeholder="Choose a topping" class="text-input">
+            <label for="name" id="name-label" class="titles">Full Name:</label>
+            <input type="text" name="name" id="name" class="text-input" size="15" placeholder="Enter Full Name"
+                required>
+            <label for="email" id="email-label" class="titles">Email Address:</label>
+            <input type="email" name="email" id="email" class="text-input" size="15" placeholder="johnsmith@email.com"
+                required>
+            <label for="birthday" id="birthday-label" class="titles">Date of Birth:</label>
+            <input type="date" name="birthday" id="birthday" class="text-input" required>
+            <label for="gender" class="titles">Gender:</label>
+            <div>
+                <input type="radio" name="gender" value="male" class="radio-option">Male
+                <input type="radio" name="gender" value="female" class="radio-option">Female
+                <input type="radio" name="gender" value="other" class="radio-option">Other
+            </div>
+            <label for="randomNumber" id="number-label" class="titles">Number between 1 and 10:</label>
+            <input type="number" id="number" class="text-input" name="number" min=1 max=10 placeholder="1-10" size=50
+                required>
+            <label for="dropdown" class="titles">Favorite Pizza Topping:</label>
+            <select id="dropdown" list="toppings" placeholder="Choose a topping" class="text-input">
 
-                    <option value="Pepperoni">Pepperoni</option>
-                    <option value="Sausage">Sausage</option>
-                    <option value="Mushrooms">Mushrooms</option>
-                    <option value="Olives">Olives</option>
-                    <option value="Pineapple">Pineapple</option>
+                <option value="Pepperoni">Pepperoni</option>
+                <option value="Sausage">Sausage</option>
+                <option value="Mushrooms">Mushrooms</option>
+                <option value="Olives">Olives</option>
+                <option value="Pineapple">Pineapple</option>
 
-                </select>
-            </fieldset>
-            <fieldset class="checkbox">
-                <label for="satisfaction" class="titles">How satisfied are you with this form?</label>
+            </select>
+            <label for="satisfaction" class="titles">How satisfied are you with this form?</label>
+            <div>
                 <input type="checkbox" name="satisfaction" value="dissatisfied" class="checkbox-option">Dissatisfied
                 <input type="checkbox" name="satisfaction" value="neutral" class="checkbox-option">Neutral
                 <input type="checkbox" name="satisfaction" value="satisfied" class="checkbox-option">Satisfied
-            </fieldset>
-            <fieldset class="textArea">
-                <label for="comments" class="titles">Additional Comments:</label>
-                <textarea name="comments" id="comments" class="text-input">Any additional comments about this survey may go here.</textarea>
-            </fieldset>
+            </div>
+            <label for="comments" class="titles">Additional Comments:</label>
+            <textarea name="comments" id="comments"
+                class="text-input">Any additional comments about this survey may go here.</textarea>
+            <div></div>
             <input id="submit" type="submit" name="submit" value="submit" id="submit">
         </form>
     </main>
