@@ -11,6 +11,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, auto);
     row-gap: 10px;
+    justify-items: center;
+    align-items: center;
 }
 
 /* main content */
@@ -54,17 +56,24 @@ form {
     margin-right: 5px;
 }
 
-fieldset {
-    border: none;
+.text-input {
+    padding: 10px 10px;
+    border-radius: 3px;
 }
 
-/* input styling */  
+fieldset {
+    border: none;
+} 
 
 /* submit button */
 
 #submit {
     padding: 0px 60px;
     margin-bottom: 40px;
+}
+
+#submit:hover {
+    cursor: pointer;
 }
 
 /* Desktop Styling */
